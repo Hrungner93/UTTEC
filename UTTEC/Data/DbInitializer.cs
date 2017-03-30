@@ -19,11 +19,11 @@ namespace UTTEC.Data
 
             var alumnos = new Alumnos[]
             {
-                new Alumnos{MatriculaID="2514160185",Nombre="Irving",AppPaterno="Mancera",AppMaterno="Robles"},
-                new Alumnos{MatriculaID="2514160107",Nombre="Ana Belen",AppPaterno="Garcia",AppMaterno="Gonzalez"},
-                new Alumnos{MatriculaID="2514160102",Nombre="Jesus Abraham",AppPaterno="Romero",AppMaterno="Cruz"},
-                new Alumnos{MatriculaID="2514160103",Nombre="Juan",AppPaterno="Perez",AppMaterno="Jolote"},
-                new Alumnos{MatriculaID="2514160174",Nombre="Omar Alejandro",AppPaterno="Hernandez",AppMaterno="Ramos"}
+                new Alumnos{Matricula="2514160185",Nombre="Irving",AppPaterno="Mancera",AppMaterno="Robles"},
+                new Alumnos{Matricula="2514160107",Nombre="Ana Belen",AppPaterno="Garcia",AppMaterno="Gonzalez"},
+                new Alumnos{Matricula="2514160102",Nombre="Jesus Abraham",AppPaterno="Romero",AppMaterno="Cruz"},
+                new Alumnos{Matricula="2514160103",Nombre="Juan",AppPaterno="Perez",AppMaterno="Jolote"},
+                new Alumnos{Matricula="2514160174",Nombre="Omar Alejandro",AppPaterno="Hernandez",AppMaterno="Ramos"}
         };
             foreach(Alumnos a in alumnos)
             {

@@ -13,8 +13,7 @@ namespace UTTEC.Data
         {
         }
         public DbSet<Alumnos> Alumnos { get; set; }
-        public DbSet<Profesor> Profesor { get; set; }
-        public DbSet<AlumnoMateria> AlumnoMateria { get; set; }
+        public DbSet<Profesor> Profesor { get; set; }        
         public DbSet<Grado> Grado { get; set; }
         public DbSet<Materia> Materia { get; set; }    
         
@@ -22,9 +21,8 @@ namespace UTTEC.Data
         {
             modelBuilder.Entity<Alumnos>().ToTable("Alumnos");
             modelBuilder.Entity<Grado>().ToTable("Grado");
-            modelBuilder.Entity<Materia>().ToTable("Materia");
-            modelBuilder.Entity<Profesor>().ToTable("Profesor");
-            modelBuilder.Entity<AlumnoMateria>().ToTable("AlumnoMateria");
+            modelBuilder.Entity<Materia>().ToTable("materia");
+            modelBuilder.Entity<Profesor>().ToTable("profesor");            
         }
 
     }
