@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
-
+using Microsoft.AspNetCore.Mvc.Rendering;
 namespace UTTEC.Models
 {
     public class Alumnos
@@ -13,6 +13,6 @@ namespace UTTEC.Models
         public String Nombre { get; set; }
         public String AppPaterno { get; set; }
         public String AppMaterno { get; set; }
-        public virtual ICollection<Grado> Grado{get;set;}
+        public virtual List<Grado> Grado{get;set;}
     }
 }

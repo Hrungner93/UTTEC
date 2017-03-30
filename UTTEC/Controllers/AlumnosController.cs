@@ -22,6 +22,9 @@ namespace UTTEC.Controllers
         // GET: Alumnos
         public async Task<IActionResult> Index()
         {
+            var UTTECContext = _context.Grado
+                   .Include(s => s.GradoId)
+                     .Include(s => s.Nombre);
             return View(await _context.Alumnos.ToListAsync());
         }
 
@@ -44,9 +47,11 @@ namespace UTTEC.Controllers
         }
 
         // GET: Alumnos/Create
-        public IActionResult Create()
-        {
-            return View();
+        public IActionResult Create() { 
+           var UTTECContext = _context.Grado
+                              .Include(s => s.GradoId)
+                                .Include(s => s.Nombre);        
+            return View(UTTECContext.ToList());
         }
 
         // POST: Alumnos/Create
